@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+
+/* NAV BAR SECTION */
+
+.navigation-section {
+  /* background-color: #0D1520; */
+  background-color: #14191b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+}
+
+
+/* HERO SECTION BACKGROUND */
+
+#particles-js{
+  height: 100%;
+  /* background: #262626; */
+  background: #0D1520;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  z-index: 1;
+  height: 100vh;
+}
+
+.underline-on-hover:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(148, 39, 39);
+  text-decoration-thickness: 3px;
+}
+
+.introduction-section {
+  margin-top: 50px;
+}
+
+.nameGreeting {
+  font-size: 4rem;
+  -webkit-text-stroke: 1px;
+  color: transparent;
+  background-image: linear-gradient(#fff, #fff);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: -1200px 0;
+  animation: backcolor 3s linear infinite alternate;
+  font-weight: 600;
+
+}
+
+.introduction-section h2 {
+  -webkit-text-stroke: 1px;
+  color: transparent;
+  background-image: linear-gradient(red, rgb(211, 27, 27));
+  background-repeat: no-repeat;
+  background-clip: text;
+  background-position: -1200px 0;
+  animation: backcolor 3s linear infinite alternate;
+}
+
+@keyframes backcolor {
+  100%{
+    background-position: 0 0;
+  }
+}
+
+.cvANDcontactSection {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.downloadCVButton {
+  background-color: rgb(88, 176, 248);
+  padding: 7px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: -1px -1px 5px 2px rgb(64, 120, 163) inset;
+}
+
+.downloadCVButton:hover {
+  background-color: rgb(88, 163, 224);
+}
+
+.icons {
+  margin-top: 30%;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+}
+
+
+/* ABOUT SECTION */
+
+.sections-background {
+  background-color: #0D1520;
+}
+
+.center {
+  padding-top: 8%;
+  position: relative;
+  width: 100%;
+  clear: both;
+  height: 100vh;
+}
+
+.section-subtitle {
+  position: relative;
+  /* text-decoration: underline wavy #ddd; */
+  color: rgb(211, 27, 27);
+
+}
+
+.section-subtitle::after {
+  position: absolute;
+  width: 79px;
+  content: "";
+  height: 0.18rem;
+  bottom: -0.1rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgb(211, 27, 27);
+}
+
+.meetBox {
+  background-color: rgb(88, 176, 248, 0.8);
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  text-align: center;
+  font-size: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: pulse 1s ease infinite;
+  position: absolute;
+  left: 15%;
+  top: 35%;
+  cursor: grab;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.writeup-text {
+  float: right;
+  font-size: 1.2rem;
+  width: 35%;
+  margin-right: 15%;
+  margin-top: 80px;
+  color: #ddd;
+  height: 50px;
+}
+
+.skillSets{
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: bounceIn 2s .5s forwards;
+}
+
+.skillSets::after {
+  position: absolute;
+  width: 70%;
+  content: "";
+  height: 0.21rem;
+  bottom: -0.4rem;
+  border-radius: 10px;
+  left: 18%;
+  right: 0;
+  /* margin: auto; */
+  background-color: rgb(211, 27, 27);
+}
+
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* FOOTER SECTION */
+
+.footer-section {
+  background-color: #14191b;;
+  /* padding: 0;
+  margin: 0; */
+}

@@ -1,0 +1,50 @@
+/* INDEX.CSS */
+
+/* .backgroundImage {
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+.backgroundImage:before {
+  content: '';
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/portfolio-background-image1.webp);
+  animation: animate 15s linear infinite;
+  z-index: -1;
+}
+
+@keyframes animate 
+{
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 650px;
+    }
+} */
+
+/* ABOUT SECTION */
+
+.meetBox {
+    background-color: rgb(88, 176, 248, 0.8); 
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    font-size: 3rem;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* animation: bounceIn 2s .5s infinite; */
+    animation: pulse 1s ease infinite;
+    left: 20%;
+    top: 50%;
+  }
