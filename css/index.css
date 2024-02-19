@@ -200,10 +200,13 @@ body, html {
 #skills {
   clear: right;
   margin-top: 30%;
+  height: 100vh;
 }
 
+
+
 #projects {
-  
+   height: 100vh;
 }
 
 .skillSets{
@@ -224,6 +227,10 @@ body, html {
   right: 0;
   /* margin: auto; */
   background-color: rgb(211, 27, 27);
+}
+
+#contact {
+  height: 100vh;
 }
 
   @keyframes bounceIn {
